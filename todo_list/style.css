@@ -94,6 +94,10 @@ li:hover {
     transition: 0.3s;
 }
 
+#checkbox{
+    cursor: pointer;
+}
+
 .edit-btn {
     border: none;
     padding: 6px 10px;

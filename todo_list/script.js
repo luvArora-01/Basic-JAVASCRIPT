@@ -26,6 +26,7 @@ function renderTask(task) {
     const li = document.createElement('li')
 
     const checkbox = document.createElement('input')
+    checkbox.setAttribute('id','checkbox')
     checkbox.type = 'checkbox'
     checkbox.checked = task.completed
 
