@@ -1,0 +1,136 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(
+        to right,
+        #2e112e,
+        #042329
+    );
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+#app {
+    width: 500px;
+    margin-top: 80px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+}
+
+#input-field {
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+}
+
+#btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: linear-gradient(
+        135deg,
+        #44a5e7,
+        #126adc
+    );
+    color: white;
+}
+
+#task-area {
+    margin-top: 20px;
+    max-height: 350px;
+    overflow-y: auto;
+}
+
+#task-area::-webkit-scrollbar {
+    width: 6px;
+}
+
+#task-area::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#task-area::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.25);
+    border-radius: 10px;
+}
+
+#tasks {
+    list-style: none;
+    padding: 0;
+    padding-right: 10px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+    padding: 12px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.08);
+}
+
+li span {
+    flex: 1;
+}
+
+li:hover {
+    transform: translateY(-2px);
+    transition: 0.3s;
+}
+
+.edit-btn {
+    border: none;
+    padding: 6px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    background: linear-gradient(
+        135deg,
+        #4facfe,
+        #00f2fe
+    );
+    transition: 0.3s;
+}
+
+.edit-btn:hover {
+    transform: scale(1.05);
+}
+
+.delete-btn {
+    border: none;
+    padding: 6px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    background: linear-gradient(
+        135deg,
+        #ff416c,
+        #ff4b2b
+    );
+    transition: 0.3s;
+}
+
+.delete-btn:hover {
+    transform: scale(1.05);
+}
+
+button img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+}
